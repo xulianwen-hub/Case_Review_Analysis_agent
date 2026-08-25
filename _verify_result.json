@@ -1,0 +1,8 @@
+{
+  "sqlite": {
+    "exists": true,
+    "size": 80351232
+  },
+  "milvus_dir_exists": true,
+  "milvus_err": "<ConnectionConfigException: (code=1, message=Open local milvus failed)>"
+}

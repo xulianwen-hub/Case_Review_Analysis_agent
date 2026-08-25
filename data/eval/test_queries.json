@@ -1,0 +1,162 @@
+[
+  {
+    "id": "Q001",
+    "query": "公司拖欠我3个月工资，我想辞职并要求赔偿，有什么法律依据？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_chunk_ids": ["b67de86c315a"],
+    "description": "劳动争议调解仲裁法·第二条（适用范围含劳动报酬争议）"
+  },
+  {
+    "id": "Q002",
+    "query": "拖欠工资可以去哪个部门投诉？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_chunk_ids": ["29c4180de92d"],
+    "description": "劳动争议调解仲裁法·第九条（拖欠工资可向劳动行政部门投诉）"
+  },
+  {
+    "id": "Q003",
+    "query": "劳动仲裁的时效是多久？从什么时候开始算？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_chunk_ids": ["b8d6f640e5ed"],
+    "description": "劳动争议调解仲裁法·第二十七条（仲裁时效一年）"
+  },
+  {
+    "id": "Q004",
+    "query": "劳动争议应该去哪个地方的仲裁委员会申请仲裁？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_chunk_ids": ["f9be22dffed3"],
+    "description": "劳动争议调解仲裁法·第二十一条（仲裁管辖：劳动合同履行地或用人单位所在地）"
+  },
+  {
+    "id": "Q005",
+    "query": "调解协议达成后，单位不履行怎么办？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_chunk_ids": ["1df8879a91ff"],
+    "description": "劳动争议调解仲裁法·第十六条（可持调解协议申请支付令）"
+  },
+  {
+    "id": "Q006",
+    "query": "我在上班路上被车撞了，这算工伤吗？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_chunk_ids": [],
+    "description": "工伤保险条例·第十四条（上下班途中非本人主要责任交通事故属工伤）"
+  },
+  {
+    "id": "Q007",
+    "query": "试用期最长可以多久？试用期工资怎么算？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_chunk_ids": [],
+    "description": "劳动合同法·第十九条、第二十条（试用期期限与工资标准）"
+  },
+  {
+    "id": "Q008",
+    "query": "经济补偿金怎么计算？工作5年月薪8000应该补偿多少？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_chunk_ids": [],
+    "description": "劳动合同法·第四十七条（经济补偿按工作年限计算）"
+  },
+  {
+    "id": "Q009",
+    "query": "哪些情况下单位可以单方面解除劳动合同？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_chunk_ids": [],
+    "description": "劳动合同法·第三十九条（用人单位单方解除劳动合同的情形）"
+  },
+  {
+    "id": "Q010",
+    "query": "加班费怎么计算？平时加班和周末加班有什么区别？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_chunk_ids": [],
+    "description": "劳动法·第四十四条（加班费标准：1.5倍/2倍/3倍）"
+  },
+  {
+    "id": "Q011",
+    "query": "公司委托第三方在异地代缴工伤保险，员工受伤后保险基金拒赔，公司要赔吗？",
+    "category": "cases",
+    "difficulty": "medium",
+    "relevant_chunk_ids": ["635066547930"],
+    "description": "案例：委托第三方异地购买工伤保险，员工受伤理赔遭拒"
+  },
+  {
+    "id": "Q012",
+    "query": "超过退休年龄的劳动者在工作中受伤，能认定工伤吗？",
+    "category": "judgments",
+    "difficulty": "medium",
+    "relevant_chunk_ids": [],
+    "description": "裁判文书：超龄劳动者工伤认定"
+  },
+  {
+    "id": "Q013",
+    "query": "员工未达到公司考核标准，拒绝调岗后被辞退，能要求赔偿吗？",
+    "category": "judgments",
+    "difficulty": "medium",
+    "relevant_chunk_ids": [],
+    "description": "裁判文书：未达考核标准拒绝调岗被辞"
+  },
+  {
+    "id": "Q014",
+    "query": "职业性中暑（热射病）算不算工伤？",
+    "category": "judgments",
+    "difficulty": "hard",
+    "relevant_chunk_ids": [],
+    "description": "裁判文书：职业性中暑应当认定为工伤"
+  },
+  {
+    "id": "Q015",
+    "query": "信贷员违规向客户介绍中介机构，被公司解除合同，能要求赔偿吗？",
+    "category": "judgments",
+    "difficulty": "medium",
+    "relevant_chunk_ids": [],
+    "description": "裁判文书：信贷员严重违反规章制度被解除合同"
+  },
+  {
+    "id": "Q016",
+    "query": "16个农民工被拖欠工资，怎么维权？",
+    "category": "cases",
+    "difficulty": "easy",
+    "relevant_chunk_ids": [],
+    "description": "案例：四川兴文法检合力解16名农民工欠薪"
+  },
+  {
+    "id": "Q017",
+    "query": "房主因为风水问题扣减农民工工资，合法吗？",
+    "category": "cases",
+    "difficulty": "hard",
+    "relevant_chunk_ids": [],
+    "description": "案例：怀疑不文明施工扣减3万劳务费"
+  },
+  {
+    "id": "Q018",
+    "query": "江苏省2024年最低工资标准是多少？",
+    "category": "regulations",
+    "difficulty": "easy",
+    "relevant_chunk_ids": [],
+    "description": "法规：江苏省调整最低工资标准通知"
+  },
+  {
+    "id": "Q019",
+    "query": "用人单位不缴社保会有什么法律后果？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_chunk_ids": [],
+    "description": "社会保险法·第八十六条（未缴社保的法律责任）"
+  },
+  {
+    "id": "Q020",
+    "query": "竞业限制期间，单位需要给补偿吗？补偿标准是多少？",
+    "category": "laws",
+    "difficulty": "hard",
+    "relevant_chunk_ids": [],
+    "description": "劳动合同法·第二十三条、第二十四条（竞业限制补偿）"
+  }
+]

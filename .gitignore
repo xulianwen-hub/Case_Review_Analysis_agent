@@ -1,0 +1,28 @@
+# 环境变量（含密钥）
+.env
+
+# 日志
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# 数据文件（体积大，不提交）
+data/processed/
+data/raw/
+models/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

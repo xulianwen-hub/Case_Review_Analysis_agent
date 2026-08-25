@@ -1,0 +1,3 @@
+{
+  "error": "<ConnectionConfigException: (code=1, message=Open local milvus failed)>"
+}

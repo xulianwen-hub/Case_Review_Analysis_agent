@@ -1,0 +1,130 @@
+[32m10:26:53[0m | [1mINFO    [0m | [36msrc.rag.ranker[0m:[36m__init__[0m:[36m386[0m - [1m[多路召回] 数据源: [][0m
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 19192.59it/s]
+[32m10:27:00[0m | [1mINFO    [0m | [36msrc.rag.ranker[0m:[36mfrom_config[0m:[36m416[0m - [1m[多路召回] 从配置加载 2 个数据源: ['laws', 'non_laws'][0m
+2026-08-18 10:27:03,491 [ERROR][_log_rpc_error]: RPC error: [search], <MilvusException: (code=101, message=Collection 'labor_laws' is in state 'released'; call load() before search/get/query)>, <elapsed:786.0ms>
+Traceback:
+Traceback (most recent call last):
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\decorators.py", line 518, in handler
+    return func(*args, **kwargs)
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\decorators.py", line 565, in handler
+    return func(self, *args, **kwargs)
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\decorators.py", line 456, in handler
+    raise e from e
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\decorators.py", line 419, in handler
+    return func(*args, **kwargs)
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\client\grpc_handler.py", line 1461, in search
+    return self._execute_search(
+           ~~~~~~~~~~~~~~~~~~~~^
+        request, timeout, round_decimal=round_decimal, context=context, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\client\grpc_handler.py", line 1346, in _execute_search
+    check_status(response.status)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\client\utils.py", line 77, in check_status
+    raise MilvusException.from_status(status)
+pymilvus.exceptions.MilvusException: <MilvusException: (code=101, message=Collection 'labor_laws' is in state 'released'; call load() before search/get/query)>
+ (decorators.py:472)
+2026-08-18 10:27:03,900 [ERROR][_log_rpc_error]: RPC error: [search], <MilvusException: (code=101, message=Collection 'labor_cases' is in state 'released'; call load() before search/get/query)>, <elapsed:258.0ms>
+Traceback:
+Traceback (most recent call last):
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\decorators.py", line 518, in handler
+    return func(*args, **kwargs)
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\decorators.py", line 565, in handler
+    return func(self, *args, **kwargs)
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\decorators.py", line 456, in handler
+    raise e from e
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\decorators.py", line 419, in handler
+    return func(*args, **kwargs)
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\client\grpc_handler.py", line 1461, in search
+    return self._execute_search(
+           ~~~~~~~~~~~~~~~~~~~~^
+        request, timeout, round_decimal=round_decimal, context=context, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\client\grpc_handler.py", line 1346, in _execute_search
+    check_status(response.status)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\agent_develp\.conda\Lib\site-packages\pymilvus\client\utils.py", line 77, in check_status
+    raise MilvusException.from_status(status)
+pymilvus.exceptions.MilvusException: <MilvusException: (code=101, message=Collection 'labor_cases' is in state 'released'; call load() before search/get/query)>
+ (decorators.py:472)
+[32m10:27:04[0m | [1mINFO    [0m | [36msrc.rag.ranker[0m:[36mretrieve_all[0m:[36m478[0m - [1m[多路召回] 1 Query × 2 数据源 → Dense=40 | BM25=33[0m
+
+=== A 管线（纯 Dense）Top 6 ===
+  [1] score=0.7677 chunk=ebb529df4106...
+       law_name='临近退休被公司辞退，劳动者可以获得经济赔偿金吗？'  article='2023-01-31'  chapter='天津司法'
+       title='临近退休被公司辞退，劳动者可以获得经济赔偿金吗？'
+       text[:80]='【案例】 | 临近退休被公司辞退，劳动者可以获得经济赔偿金吗？ | 天津司法 | 2023-01-31\n\n劳动者有下列情形之一的，用人单位不得依照本法第四十条、'
+  [2] score=0.7533 chunk=cf9c35ef9515...
+       law_name='遭解雇是要补偿还是赔偿'  article='2023-04-03'  chapter='安徽日报'
+       title='遭解雇是要补偿还是赔偿'
+       text[:80]='【法规】 | 遭解雇是要补偿还是赔偿 | 安徽日报 | 2023-04-03\n\n本文转自：安徽日报 问：不久前，公司人事部通知包括小徐在内的几名员工，说因公司对'
+  [3] score=0.7480 chunk=a5b67ffbd13d...
+       law_name='违法开除员工，打工人获赔！'  article='2024-02-25'  chapter='甘肃普法'
+       title='违法开除员工，打工人获赔！'
+       text[:80]='【案例】 | 违法开除员工，打工人获赔！ | 甘肃普法 | 2024-02-25\n\n劳动者有下列情形之一的，用人单位可以解除劳动合同：（一）在试用期间被证明不符'
+  [4] score=0.7476 chunk=8e328cfdf39d...
+       law_name='劳动合同法'  article='第八十七条~第九十二条'  chapter='第七章\u3000法律责任'
+       title=''
+       text[:80]='【劳动合同法·第七章 法律责任】\n\n第八十七条\n用人单位违反本法规定解除或者终止劳动合同的，应当依照本法第四十七条规定的经济补偿标准的二倍向劳动者支付赔偿金。\n'
+  [5] score=0.7473 chunk=5b4d398fade2...
+       law_name='违法解除劳动合同赔偿金在破产债权确认中的认定'  article='2023-05-25'  chapter='人民法院报'
+       title='违法解除劳动合同赔偿金在破产债权确认中的认定'
+       text[:80]='【案例】 | 违法解除劳动合同赔偿金在破产债权确认中的认定 | 人民法院报 | 2023-05-25\n\n裁判要旨\xa0\xa0\xa0\xa0用人单位违法解除或终止劳动合同的，应向劳'
+  [6] score=0.7452 chunk=1e0ba41e10dd...
+       law_name='双方协商一致解除劳动合同，劳动者可获何种补偿？'  article='2024-08-28'  chapter='中国劳动保障报'
+       title='双方协商一致解除劳动合同，劳动者可获何种补偿？'
+       text[:80]='【案例】 | 双方协商一致解除劳动合同，劳动者可获何种补偿？ | 中国劳动保障报 | 2024-08-28\n\n情 简 介詹某于2021年8月28日入职福建省某建'
+
+=== B 管线（Dense+BM25+RRF 粗排）Top 6 ===
+[32m10:27:04[0m | [1mINFO    [0m | [36msrc.rag.ranker[0m:[36mmerge_multi_source[0m:[36m621[0m - [1m[RRF] Dense({'laws': 10, 'non_laws': 30}) + BM25({'laws': 3, 'non_laws': 30}) → 融合后 15 条[0m
+  [1] RRF_score=0.0164 source_db=laws
+       law_name='劳动合同法'  article='第八十七条~第九十二条'  chapter='第七章\u3000法律责任'
+       title=''
+       text[:80]='【劳动合同法·第七章 法律责任】\n\n第八十七条\n用人单位违反本法规定解除或者终止劳动合同的，应当依照本法第四十七条规定的经济补偿标准的二倍向劳动者支付赔偿金。\n'
+  [2] RRF_score=0.0164 source_db=non_laws
+       law_name='临近退休被公司辞退，劳动者可以获得经济赔偿金吗？'  article='2023-01-31'  chapter='天津司法'
+       title='临近退休被公司辞退，劳动者可以获得经济赔偿金吗？'
+       text[:80]='【案例】 | 临近退休被公司辞退，劳动者可以获得经济赔偿金吗？ | 天津司法 | 2023-01-31\n\n劳动者有下列情形之一的，用人单位不得依照本法第四十条、'
+  [3] RRF_score=0.0164 source_db=laws
+       law_name='工伤保险条例'  article='第三十六条~第三十七条'  chapter='第五章\u3000工伤保险待遇'
+       title=''
+       text[:80]='【工伤保险条例·第五章 工伤保险待遇】\n\n第三十六条 职工因工致残被鉴定为五级、六级伤残的，享受以下待遇\n(一)从工伤保险基金按伤残等级支付一次性伤残补助金，标'
+  [4] RRF_score=0.0164 source_db=non_laws
+       law_name='网络主播与签约公司构成劳动关系吗？'  article='2023-11-03'  chapter='中工网'
+       title='网络主播与签约公司构成劳动关系吗？'
+       text[:80]='【案例】 | 网络主播与签约公司构成劳动关系吗？ | 中工网 | 2023-11-03\n\n近日，广东省高级人民法院首次发布诉权保护典型案例。这些案例通过在婚姻家'
+  [5] RRF_score=0.0161 source_db=laws
+       law_name='劳动合同法'  article='第四十五条~第四十七条'  chapter='第四章\u3000劳动合同的解除和终止'
+       title=''
+       text[:80]='【劳动合同法·第四章 劳动合同的解除和终止】\n\n第四十五条\n劳动合同期满，有本法第四十二条规定情形之一的，劳动合同应当续延至相应的情形消失时终止。但是，本法第四'
+  [6] RRF_score=0.0161 source_db=non_laws
+       law_name='遭解雇是要补偿还是赔偿'  article='2023-04-03'  chapter='安徽日报'
+       title='遭解雇是要补偿还是赔偿'
+       text[:80]='【法规】 | 遭解雇是要补偿还是赔偿 | 安徽日报 | 2023-04-03\n\n本文转自：安徽日报 问：不久前，公司人事部通知包括小徐在内的几名员工，说因公司对'
+
+=== 测试法条标识符匹配器 ===
+  RAG_001 的 must_hit = ['第四十七条','第四十八条','第八十七条']
+  标准化后 = ['第47条','第48条','第87条']
+
+  combined 输入 = '劳动合同法 第八十七条~第九十二条 第七章\u3000法律责任  【劳动合同法·第七章 法律责任】\n\n第八十七条\n用人单位违反本法规定解除或者终止劳动合同的，应当依照本法第四十七条规定的经济补偿标准的二倍向劳动者支付赔偿金。\n\n第八十八条 用人单位有下列情形之一的，依法给予行政处罚；构成犯罪的，依法追究刑事责'
+  第1名 → 抽取标识符='第87条'  → 命中 must_hit? True
+
+  combined 输入 = '临近退休被公司辞退，劳动者可以获得经济赔偿金吗？ 2023-01-31 天津司法 临近退休被公司辞退，劳动者可以获得经济赔偿金吗？ 【案例】 | 临近退休被公司辞退，劳动者可以获得经济赔偿金吗？ | 天津司法 | 2023-01-31\n\n劳动者有下列情形之一的，用人单位不得依照本法第四十条、第四十一'
+  第2名 → 抽取标识符='第40条'  → 命中 must_hit? False
+
+  combined 输入 = '工伤保险条例 第三十六条~第三十七条 第五章\u3000工伤保险待遇  【工伤保险条例·第五章 工伤保险待遇】\n\n第三十六条 职工因工致残被鉴定为五级、六级伤残的，享受以下待遇\n(一)从工伤保险基金按伤残等级支付一次性伤残补助金，标准为：五级伤残为18个月的本人工资，六级伤残为16个月的本人工资；(二)保留与'
+  第3名 → 抽取标识符='第36条'  → 命中 must_hit? False
+
+  combined 输入 = '网络主播与签约公司构成劳动关系吗？ 2023-11-03 中工网 网络主播与签约公司构成劳动关系吗？ 【案例】 | 网络主播与签约公司构成劳动关系吗？ | 中工网 | 2023-11-03\n\n近日，广东省高级人民法院首次发布诉权保护典型案例。这些案例通过在婚姻家庭、所有权、合同、劳动争议、公司、破产'
+  第4名 → 抽取标识符=''  → 命中 must_hit? False
+
+  combined 输入 = '劳动合同法 第四十五条~第四十七条 第四章\u3000劳动合同的解除和终止  【劳动合同法·第四章 劳动合同的解除和终止】\n\n第四十五条\n劳动合同期满，有本法第四十二条规定情形之一的，劳动合同应当续延至相应的情形消失时终止。但是，本法第四十二条第二项规定丧失或者部分丧失劳动能力劳动者的劳动合同的终止，按照国家'
+  第5名 → 抽取标识符='第45条'  → 命中 must_hit? False
+
+  combined 输入 = '遭解雇是要补偿还是赔偿 2023-04-03 安徽日报 遭解雇是要补偿还是赔偿 【法规】 | 遭解雇是要补偿还是赔偿 | 安徽日报 | 2023-04-03\n\n本文转自：安徽日报 问：不久前，公司人事部通知包括小徐在内的几名员工，说因公司对组织架构进行了调整，需要解雇他们几个人。有同事认为，可以找老'
+  第6名 → 抽取标识符='第5条'  → 命中 must_hit? False
+

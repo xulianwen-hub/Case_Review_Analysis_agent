@@ -1,0 +1,611 @@
+[
+  {
+    "id": "RAG_001",
+    "query": "公司违法解除劳动合同怎么赔偿？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "劳动合同法第四十七条",
+      "劳动合同法第四十八条",
+      "劳动合同法第八十七条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第四十七条",
+      "第四十八条",
+      "第八十七条"
+    ],
+    "laws_order_before": [
+      "第八十七条",
+      "第四十条"
+    ],
+    "description": "违法解除 2N 赔偿核心法条组：47条计算基数+48条继续履行选择权+87条2N罚则",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_002",
+    "query": "未签书面劳动合同双倍工资最多支持几个月？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "劳动合同法第十条",
+      "劳动合同法第八十二条",
+      "劳动合同法实施条例第六条",
+      "劳动合同法实施条例第七条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第八十二条",
+      "第十条"
+    ],
+    "laws_order_before": [
+      "第八十二条",
+      "第七条"
+    ],
+    "description": "未签合同二倍工资封顶 11 个月的计算规则（第八十二条）",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_003",
+    "query": "加班费计算标准是多少？平日、周末、法定节假日分别几倍？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "劳动法第四十四条",
+      "工资支付暂行规定第十三条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第四十四条"
+    ],
+    "laws_order_before": [],
+    "description": "劳动法第44条加班费标准：平日150% / 休息日200% / 法定节假日300%",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_004",
+    "query": "公司拖欠工资怎么办？可以要求加付赔偿金吗？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "劳动合同法第三十条",
+      "劳动合同法第八十五条",
+      "劳动争议调解仲裁法第九条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第八十五条",
+      "第九条"
+    ],
+    "laws_order_before": [],
+    "description": "欠薪维权渠道+加付赔偿金50%-100%罚则",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_005",
+    "query": "带薪年休假天数怎么算？工龄1年、10年、20年分别多少天？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "职工带薪年休假条例第三条",
+      "企业职工带薪年休假实施办法第三条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第三条"
+    ],
+    "laws_order_before": [],
+    "description": "年假分档：1-10年5天 / 10-20年10天 / 20年以上15天",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_006",
+    "query": "公司提出和我协商解除劳动合同，应该给我N还是N+1？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "劳动合同法第三十六条",
+      "劳动合同法第四十六条",
+      "劳动合同法第四十七条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第三十六条",
+      "第四十六条",
+      "第四十七条"
+    ],
+    "laws_order_before": [],
+    "description": "协商解除（36条）+ 经济补偿情形（46条第2项）+ 计算规则（47条）= N",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_007",
+    "query": "公司违法在先我被迫辞职，可以拿经济补偿金吗？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "劳动合同法第三十八条",
+      "劳动合同法第四十六条",
+      "劳动合同法第四十七条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第三十八条",
+      "第四十六条"
+    ],
+    "laws_order_before": [],
+    "description": "被迫解除（38条：欠薪、未缴社保、暴力威胁等）+ N补偿（46条第1项）",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_008",
+    "query": "试用期最长几个月？3年合同试用期6个月合法吗？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "劳动合同法第十九条",
+      "劳动合同法第二十条",
+      "劳动合同法第八十三条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第十九条"
+    ],
+    "laws_order_before": [],
+    "description": "试用期上限：<1年→1个月，1-3年→2个月，≥3年/无固定→6个月；第83条违法试用赔偿",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_009",
+    "query": "劳动仲裁的时效是多久？从什么时候开始算？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "劳动争议调解仲裁法第二十七条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第二十七条"
+    ],
+    "laws_order_before": [],
+    "description": "仲裁时效1年 + 例外（劳动报酬在职不受限，离职后1年内提）",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_010",
+    "query": "公司不给交社保我该去哪里举报？会有什么处罚？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "社会保险法第六十三条",
+      "社会保险法第八十六条",
+      "社会保险法第八十四条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第六十三条",
+      "第八十六条"
+    ],
+    "laws_order_before": [],
+    "description": "社保补缴渠道：社保稽核/税务部门；单位欠缴按日加收万分之五滞纳金",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_011",
+    "query": "上下班途中被车撞了算工伤吗？什么情形下算？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "工伤保险条例第十四条",
+      "工伤保险条例第十五条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第十四条"
+    ],
+    "laws_order_before": [],
+    "description": "工伤认定：上下班途中非本人主要责任交通事故（第14条第6项）",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_012",
+    "query": "未休年假工资是按日工资的几倍算？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "企业职工带薪年休假实施办法第十条",
+      "职工带薪年休假条例第五条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第十条"
+    ],
+    "laws_order_before": [],
+    "description": "未休年假工资 = 日工资收入 × 300%（其中包含正常工作期间100%，实际补发200%）",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_013",
+    "query": "什么情况下公司可以提前30天通知辞退我并且只给N？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "劳动合同法第四十条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第四十条"
+    ],
+    "laws_order_before": [],
+    "description": "无过失性辞退 N+1（第40条：医疗期满、不胜任、客观情况重大变化），提前30天通知可省代通知金",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_014",
+    "query": "竞业限制期间公司要不要给我补偿？标准是多少？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "劳动合同法第二十三条",
+      "劳动合同法第二十四条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第二十三条"
+    ],
+    "laws_order_before": [],
+    "description": "竞业限制补偿：按月支付，标准不低于月均工资30%或当地最低工资（23条第2款）",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_015",
+    "query": "严重违反公司规章制度被开除能拿赔偿吗？",
+    "category": "laws",
+    "difficulty": "easy",
+    "relevant_law_articles": [
+      "劳动合同法第三十九条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第三十九条"
+    ],
+    "laws_order_before": [],
+    "description": "过失性辞退零补偿（第39条：严重违纪/试用期不符/营私舞弊/兼职影响/欺诈判刑）",
+    "source_method": "Method1_直接生成_法条号案由查询",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_016",
+    "query": "经济补偿金N怎么计算？工龄4年3个月刚好半年临界点算几个月？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_law_articles": [
+      "劳动合同法第四十七条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第四十七条"
+    ],
+    "laws_order_before": [],
+    "description": "N计算边界：满1年付1月，6个月以上不满1年按1年算，不满6个月按0.5个月。月薪超社平3倍按3倍封顶，年限最高12年。",
+    "source_method": "Method2_DocToQuery_LLM生成具体场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_017",
+    "query": "我在一家公司做了4年没签合同，还能要11个月双倍工资吗？会不会过了时效？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_law_articles": [
+      "劳动合同法第八十二条",
+      "劳动合同法实施条例第七条",
+      "劳动争议调解仲裁法第二十七条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第八十二条",
+      "第二十七条"
+    ],
+    "laws_order_before": [],
+    "description": "双倍工资时效陷阱：入职满1年视为已订立无固定期限合同，二倍工资主张按月起算1年时效，4年后基本全部超过时效不支持。",
+    "source_method": "Method2_DocToQuery_LLM生成具体场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_018",
+    "query": "我月薪12000，公司口头通知我明天不用来了没有任何书面通知，我该要2N还是N+1？",
+    "category": "both",
+    "difficulty": "medium",
+    "relevant_law_articles": [
+      "劳动合同法第八十七条",
+      "劳动合同法第四十七条",
+      "劳动合同法第四十条"
+    ],
+    "relevant_cases_hint": [
+      "口头辞退 违法解除 案例",
+      "微信辞退 未签合同"
+    ],
+    "laws_must_hit_in_top5": [
+      "第八十七条",
+      "第四十七条"
+    ],
+    "laws_order_before": [
+      "第八十七条",
+      "第四十条"
+    ],
+    "description": "关键区分：无理由口头辞退→第87条违法解除=2N；有第40条情形才是N+1；两者不可同时主张。",
+    "source_method": "Method2_DocToQuery_LLM生成具体场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_019",
+    "query": "公司说周末团建算正常上班不给加班费，这合法吗？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_law_articles": [
+      "劳动法第四十四条",
+      "劳动法第四十条",
+      "国务院关于职工工作时间的规定第三条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第四十四条"
+    ],
+    "laws_order_before": [],
+    "description": "加班认定三要素：用人单位安排+法定标准工时外+从事生产经营或与工作相关活动。强制团建占用休息日通常可主张加班。",
+    "source_method": "Method2_DocToQuery_LLM生成具体场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_020",
+    "query": "公司拖欠工资3个月，我被迫提离职，能同时要欠薪+被迫解除N+加付50%-100%赔偿金？",
+    "category": "both",
+    "difficulty": "medium",
+    "relevant_law_articles": [
+      "劳动合同法第三十八条",
+      "劳动合同法第四十六条",
+      "劳动合同法第八十五条",
+      "劳动争议调解仲裁法第二十七条"
+    ],
+    "relevant_cases_hint": [
+      "被迫解除 拖欠工资 经济补偿"
+    ],
+    "laws_must_hit_in_top5": [
+      "第三十八条",
+      "第四十六条",
+      "第八十五条"
+    ],
+    "laws_order_before": [],
+    "description": "三层权利主张：欠薪本金 + 被迫解除经济补偿金N + 经劳动监察责令仍不支付的加付赔偿金（85条有前置程序要求）。",
+    "source_method": "Method2_DocToQuery_LLM生成具体场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_021",
+    "query": "连续工龄12年跳槽新公司不满1年，年假怎么算？新公司说不满一年不给年假违法吗？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_law_articles": [
+      "职工带薪年休假条例第二条",
+      "企业职工带薪年休假实施办法第三条",
+      "企业职工带薪年休假实施办法第五条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第三条",
+      "第五条"
+    ],
+    "laws_order_before": [],
+    "description": "年假按累计工龄非本单位工龄；新进单位当年度年休假天数按当年在本单位剩余日历天数折算。",
+    "source_method": "Method2_DocToQuery_LLM生成具体场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_022",
+    "query": "合同到期公司不续签但要求我签自愿离职书才给补偿，我签了还能仲裁吗？",
+    "category": "both",
+    "difficulty": "medium",
+    "relevant_law_articles": [
+      "劳动合同法第四十四条",
+      "劳动合同法第四十六条",
+      "最高人民法院关于审理劳动争议案件适用法律问题的解释（一）第三十五条"
+    ],
+    "relevant_cases_hint": [
+      "自愿离职书 重大误解 显失公平 撤销"
+    ],
+    "laws_must_hit_in_top5": [
+      "第四十四条",
+      "第四十六条"
+    ],
+    "laws_order_before": [],
+    "description": "关键辨析：合同到期单位不续签→46条5项N；签自愿离职→零补偿；例外：签了离职协议后能证明欺诈胁迫显失公平可撤销。",
+    "source_method": "Method2_DocToQuery_LLM生成具体场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_023",
+    "query": "签了3年合同试用期约定了3个月，试用期工资80%合法吗？未过试用期被辞怎么办？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_law_articles": [
+      "劳动合同法第十九条",
+      "劳动合同法第二十条",
+      "劳动合同法第三十九条",
+      "劳动合同法第八十七条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第十九条",
+      "第二十条"
+    ],
+    "laws_order_before": [],
+    "description": "3年合同试用期3个月（上限6个月）合法；试用期工资≥80%约定工资且≥当地最低工资合法；试用期辞退须证明39条情形，否则也是违法解除。",
+    "source_method": "Method2_DocToQuery_LLM生成具体场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_024",
+    "query": "员工工伤10级，公司要解除劳动合同，除了工伤赔偿还能要违法解除2N吗？",
+    "category": "laws",
+    "difficulty": "medium",
+    "relevant_law_articles": [
+      "劳动合同法第四十二条",
+      "劳动合同法第八十七条",
+      "工伤保险条例第三十七条"
+    ],
+    "relevant_chunk_ids": [],
+    "laws_must_hit_in_top5": [
+      "第四十二条",
+      "第三十七条"
+    ],
+    "laws_order_before": [
+      "第四十二条",
+      "第三十九条"
+    ],
+    "description": "1-6级工伤禁止解除（第42条第2项），7-10级合同到期终止或员工提出可解除；单位违法解除工伤员工=工伤保险待遇+87条2N双重赔偿。",
+    "source_method": "Method2_DocToQuery_LLM生成具体场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_025",
+    "query": "农民工工资被拖欠可以去哪些部门投诉？有快速绿色通道吗？",
+    "category": "both",
+    "difficulty": "medium",
+    "relevant_law_articles": [
+      "保障农民工工资支付条例第三条",
+      "保障农民工工资支付条例第十条",
+      "劳动争议调解仲裁法第九条"
+    ],
+    "relevant_cases_hint": [
+      "农民工欠薪 法律援助 快速裁决 先予执行"
+    ],
+    "laws_must_hit_in_top5": [
+      "第十条",
+      "第九条"
+    ],
+    "laws_order_before": [],
+    "description": "农民工欠薪维权渠道：劳动监察、12333、住建部门（工程领域）、欠薪垫付制度、劳动仲裁先予执行、法律援助绿色通道。",
+    "source_method": "Method2_DocToQuery_LLM生成具体场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_026",
+    "query": "公司跟我签了竞业限制协议，约定离职后每月给补偿，但实际上是把钱混在在职工资里按月发的，我离职后去了同行公司，现在公司说我违反竞业限制要我赔违约金，我该怎么办？",
+    "category": "cases",
+    "difficulty": "hard",
+    "relevant_law_articles": [
+      "劳动合同法第二十三条",
+      "劳动合同法第二十四条"
+    ],
+    "relevant_chunk_ids": [
+      "9103737e0b17"
+    ],
+    "laws_must_hit_in_top5": [
+      "竞业补偿金与工资",
+      "无须履行竞业限制"
+    ],
+    "laws_order_before": [],
+    "description": "案例：竞业限制补偿金混入在职工资按月发放→无法与工资明确区分，视为未支付竞业限制补偿金，劳动者无须履行竞业限制义务（浙江温州洞头法院）",
+    "source_method": "Method4_库中选文_案例反推场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_027",
+    "query": "超过退休年龄的保洁员在物业公司上班，公司没给交工伤保险，上班途中被车撞了去世，能认定工亡吗？公司需要赔偿吗？",
+    "category": "cases",
+    "difficulty": "hard",
+    "relevant_law_articles": [
+      "工伤保险条例第十四条",
+      "工伤保险条例第三十九条",
+      "工伤保险条例第六十二条"
+    ],
+    "relevant_chunk_ids": [
+      "6b9874b1e808"
+    ],
+    "laws_must_hit_in_top5": [
+      "上班途中发生交通事故被认定为工亡",
+      "超过法定退休年龄"
+    ],
+    "laws_order_before": [],
+    "description": "案例：超过法定退休年龄（70岁）保洁员上班途中交通事故死亡→认定为工亡；单位未参保，由用人单位承担工亡待遇（安徽宣城中院）",
+    "source_method": "Method4_库中选文_案例反推场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_028",
+    "query": "公司跨省委托第三方劳务公司帮我在外地买工伤保险，我受伤后保险基金以虚构劳动关系拒赔，我的工伤待遇应该找谁承担？",
+    "category": "cases",
+    "difficulty": "hard",
+    "relevant_law_articles": [
+      "工伤保险条例第六十二条",
+      "社会保险法第六十三条"
+    ],
+    "relevant_chunk_ids": [
+      "635066547930"
+    ],
+    "laws_must_hit_in_top5": [
+      "委托第三方异地购买工伤保险",
+      "员工受工伤却无法理赔"
+    ],
+    "laws_order_before": [],
+    "description": "案例：公司委托第三方异地代缴工伤保险，因虚构劳动关系致工伤认定被撤销、基金拒赔→由用人单位承担工伤保险待遇赔付义务（湖南宁乡法院）",
+    "source_method": "Method4_库中选文_案例反推场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_029",
+    "query": "公司员工手册规定年休假到年底没申请就自动作废，我入职两年一天年假都没休过，离职时能要求公司支付未休年假工资吗？",
+    "category": "cases",
+    "difficulty": "hard",
+    "relevant_law_articles": [
+      "职工带薪年休假条例第五条",
+      "企业职工带薪年休假实施办法第九条",
+      "企业职工带薪年休假实施办法第十条"
+    ],
+    "relevant_chunk_ids": [
+      "2686db324b92"
+    ],
+    "laws_must_hit_in_top5": [
+      "逾期未休视为作废"
+    ],
+    "laws_order_before": [],
+    "description": "案例：公司规定年休假逾期未休视为作废→不符合法律规定；劳动者未书面放弃年休假，离职时仍有权获得未休年假工资补偿",
+    "source_method": "Method4_库中选文_案例反推场景问法",
+    "perturbation_type": ""
+  },
+  {
+    "id": "RAG_030",
+    "query": "休息日我按公司要求发朋友圈推广产品，领导给我点赞了，这能证明加班吗？后来公司以考核不达标把我辞退，能要赔偿金和加班费吗？",
+    "category": "cases",
+    "difficulty": "hard",
+    "relevant_law_articles": [
+      "劳动法第四十四条",
+      "最高人民法院关于审理劳动争议案件适用法律问题的解释（一）第四十二条",
+      "工资支付暂行规定第十三条"
+    ],
+    "relevant_chunk_ids": [
+      "22c1ad690e65"
+    ],
+    "laws_must_hit_in_top5": [
+      "领导点赞朋友圈"
+    ],
+    "laws_order_before": [],
+    "description": "案例：领导点赞朋友圈可作为加班事实证据；公司以单月考核不达标解除劳动合同违法→支付违法解除赔偿金与加班费（江苏南通中院）",
+    "source_method": "Method4_库中选文_案例反推场景问法",
+    "perturbation_type": ""
+  }
+]

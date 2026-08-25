@@ -1,0 +1,26 @@
+Step 1: 打开 chunks.db
+OK
+
+Step 2: 查所有表名
+tables = [('chunks',), ('chunks_fts',), ('chunks_fts_config',), ('chunks_fts_data',), ('chunks_fts_docsize',), ('chunks_fts_idx',), ('sqlite_stat1',)]
+
+Step 3: 查 chunks 表 schema
+  col: (0, 'id', 'TEXT', 0, None, 1)
+  col: (1, 'chunk_type', 'TEXT', 1, None, 0)
+  col: (2, 'text', 'TEXT', 1, None, 0)
+  col: (3, 'law_name', 'TEXT', 0, None, 0)
+  col: (4, 'chapter', 'TEXT', 0, None, 0)
+  col: (5, 'article', 'TEXT', 0, None, 0)
+  col: (6, 'parent_key', 'TEXT', 0, None, 0)
+  col: (7, 'content_length', 'INTEGER', 0, None, 0)
+
+Step 4: 从 chunks 表随机抽 10 条，看 law_name/article/chapter 列真实内容
+FAIL select 10: no such column: chunk_id
+Traceback (most recent call last):
+  File "D:\agent_develp\sandbox\diag_0_db_raw.py", line 44, in <module>
+    cur.execute("SELECT chunk_id, law_name, article, chapter, title, substr(text,1,120) FROM chunks WHERE law_name IS NOT NULL LIMIT 10")
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: chunk_id
+
+
+DONE

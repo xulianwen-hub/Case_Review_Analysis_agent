@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-多轮对话编排模块单元测试（离线，不加载模型、不调用真实 LLM）：
-    1. LLM 证据抽取器：JSON 解析 / 归一化 / 正则兜底
-    2. 报告反思校验器：规则通过 / 失败
-    3. AgentOrchestrator：注入假 LLM + 假检索，完整跑通 FSM 全流程
-    4. mock 模式回归：原离线 demo 路径不受影响
-"""
+
 import sys
 from pathlib import Path
 
